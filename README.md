@@ -52,22 +52,6 @@ El enfoque principal del proyecto fue el **diseño e implementación de la base 
 | `Usuarios`             | Usuarios del sistema (login)                     |
 | `Bitacora`             | Auditoría de cambios de precio                   |
 
-## Estructura del Repositorio
-Bases2_Proyecto1/
-├── Back/                    # Backend Node.js + Express
-│   ├── controllers/         # Lógica de negocio (CRUD + reportes)
-│   ├── routes/              # Definición de endpoints
-│   ├── config/              # Configuración de conexión Oracle
-│   ├── Wallet_.../          # Oracle Wallet
-│   └── app.js
-├── Front/                   # Frontend React
-│   ├── src/
-│   │   ├── Components/
-│   │   └── Assets/
-│   └── public/
-├── tablas                   # Script de creación de tablas (DDL)
-├── datos                    # Scripts de inserción de datos de prueba
-└── otros requerimientos     # Triggers + Packages PL/SQL
 
 ## Cómo ejecutar el proyecto
 1. Base de datos (Oracle)
@@ -79,15 +63,15 @@ Ejecutar el contenido de otros requerimientos (trigger + packages).
 2. Backend
 cd Back
 npm install
-# Configurar la conexión a Oracle en el archivo de configuración
+Configurar la conexión a Oracle en el archivo de configuración
 node app.js
-# El servidor corre en http://localhost:5000
+El servidor corre en http://localhost:5000
 
 3. Frontend
 cd Front
 npm install
 npm start
-# La aplicación corre en http://localhost:3000
+La aplicación corre en http://localhost:3000
 
 ## Funcionalidades destacadas (SQL / PL-SQL)
 
